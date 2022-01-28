@@ -47,7 +47,9 @@ const root = new Vue({
          };
       },
       addTask() {
-         
+         let newLine = this.newTask;
+         this.ingredients.push({ text: newLine, done: false });
+         this.newTask = '';
       }
    }
 })
