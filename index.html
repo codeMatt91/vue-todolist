@@ -14,14 +14,19 @@
 
 <body>
    <div id="root">
+
       <header class="d-flex justify-content-center align-items-center mx-auto my-4 bg-warning">
          <i class="fas fa-shopping-basket fa-4x bg-warning"></i>
          <h1 class="fw-bold my-3 ms-3 ">Shop List: Cak</h1><i class="fas fa-birthday-cake fa-2x"></i>
       </header>
       <section class="w-50 mx-auto my-4">
+
+         <!--! Text to add an ingredient on list  -->
          <div class="empty d-flex align-items-center justify-content-center" v-if="ingredients.length === 0">
             <i class="fas fa-plus fa-3x text-warning"></i><h1 class="mx-3">Add an ingredient</h1>
          </div>
+
+         <!--! List  -->
          <ul class="list-unstyled">
             <li class="py-3 d-flex justify-content-between align-items-center" 
             v-for="(element,index) in ingredients" :class="element.done ? 'line-through ' : ''">
