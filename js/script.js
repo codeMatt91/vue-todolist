@@ -39,7 +39,11 @@ const root = new Vue({
    },
    methods: {
       deletElement(element) {
-         element.done = false;
+         if (element.done) {
+            element.done = false;
+         } else {
+            element.done = true;
+         };
       }
    }
 })
