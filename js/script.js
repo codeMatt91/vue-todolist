@@ -55,8 +55,11 @@ const root = new Vue({
          }
          this.newTask = '';
       },
-      removeTask() {
-         
+      removeTask(index) {
+         this.ingredients = this.ingredients.filter((item, i) => {
+            if (i !== index) return true;
+            else return false;
+         })
       }
    }
 })
