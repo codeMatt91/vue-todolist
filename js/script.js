@@ -50,10 +50,12 @@ const root = new Vue({
          if (this.newTask == '') {
             
          } else {
-            
             let newLine = this.newTask;
             this.ingredients.push({ text: newLine, done: false });
          }
+         this.newTask = '';
+      },
+      removeTask(element) {
          this.newTask = '';
       }
    }

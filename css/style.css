@@ -6,4 +6,9 @@
 
 .line-through {
    text-decoration: line-through;
+   cursor: pointer;
+}
+
+.list-check {
+   cursor: pointer;
 }
