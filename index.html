@@ -20,7 +20,9 @@
       </header>
       <section class="w-50 mx-auto my-4">
          <ul class="list-unstyled">
-            <li class="py-3" v-for="element in ingredients">{{ element.text }}</li>
+            <li class="py-3 d-flex justify-content-between" v-for="element in ingredients" :class="element.done ? 'line-through ' : ''">
+               {{ element.text }}<button class="btn-close" @click="deletElement(element)"></button>
+            </li>
          </ul>
       </section>
    </div>

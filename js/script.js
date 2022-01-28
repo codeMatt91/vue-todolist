@@ -36,5 +36,10 @@ const root = new Vue({
          {text:'Butter: 100g', done:false},
          {text:'Cream: 150g', done:false},
       ]
+   },
+   methods: {
+      deletElement(element) {
+         element.done = false;
+      }
    }
 })
