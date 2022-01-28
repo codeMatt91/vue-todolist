@@ -16,3 +16,7 @@
 header .fa-birthday-cake{
    transform: rotate(90deg);
 }
+
+.empty{
+   margin: 100px 0;
+}
