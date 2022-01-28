@@ -12,3 +12,7 @@
 .list-check {
    cursor: pointer;
 }
+
+header .fa-birthday-cake{
+   transform: rotate(90deg);
+}
