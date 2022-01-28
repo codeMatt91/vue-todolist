@@ -27,6 +27,7 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 const root = new Vue({
    el: '#root',
    data: {
+      newTask: '',
       ingredients: [
          {text:'Sugar: 150g', done:false},
          {text:'Flour: 300g', done:false},
@@ -44,6 +45,9 @@ const root = new Vue({
          } else {
             element.done = true;
          };
+      },
+      addTask() {
+         
       }
    }
 })

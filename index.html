@@ -15,7 +15,7 @@
 <body>
    <div id="root">
       <header class="d-flex justify-content-center align-items-center mx-auto my-4">
-         <i class="fas fa-shopping-basket fa-4x"></i>
+         <i class="fas fa-shopping-basket fa-4x bg-warning"></i>
          <h1 class="fw-bold my-3 ms-3">Shop List: Cak</h1><i class="fas fa-birthday-cake fa-2x"></i>
       </header>
       <section class="w-50 mx-auto my-4">
@@ -27,6 +27,12 @@
 
             </li>
          </ul>
+
+         <!-- ! Input to insert a task in shop list -->
+         <div class="input-group mb-3">
+            <input type="text" class="form-control" v-model="newTask">
+            <button class="btn btn-outline-primary">Add List</button>
+         </div>
       </section>
    </div>
    
