@@ -58,6 +58,19 @@ const root = new Vue({
             if (i !== index) return true;
             else return false;
          })
+      },
+      avoidAllTask() {
+         this.ingredients = this.ingredients.map((ingredient) => {
+            ingredient.done = true;
+            return ingredient;
+         })
+      },
+      clearAllTask() {
+         this.ingredients = this.ingredients.map((ingredient) => {
+            ingredient.done = false;
+            return ingredient;
+         })
       }
+      
    }
 })
