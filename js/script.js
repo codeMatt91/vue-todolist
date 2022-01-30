@@ -47,10 +47,8 @@ const root = new Vue({
          };
       },
       addTask() {
-         let newTask = this.newTask.trim();
-         if (this.newTask == '' || this.newTask == ' ') {
-            
-         } else {
+         const newTask = this.newTask.trim();
+         if (newTask !== '') {
             this.ingredients.push({ text: newTask, done: false });
          }
          this.newTask = '';
