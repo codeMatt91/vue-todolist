@@ -23,7 +23,8 @@
 
          <!--! Text to add an ingredient on list  -->
          <div class="empty d-flex align-items-center justify-content-center" v-if="ingredients.length === 0">
-            <i class="fas fa-plus fa-3x text-warning"></i><h1 class="mx-3">Add an ingredient</h1>
+            <i class="fas fa-plus fa-3x text-warning" @click="addTask">
+            </i><h1 class="mx-3">Add an ingredient</h1>
          </div>
 
          <!--! List  -->

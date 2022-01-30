@@ -47,11 +47,11 @@ const root = new Vue({
          };
       },
       addTask() {
-         if (this.newTask == '') {
+         let newTask = this.newTask.trim();
+         if (this.newTask == '' || this.newTask == ' ') {
             
          } else {
-            let newLine = this.newTask.trim();
-            this.ingredients.push({ text: newLine, done: false });
+            this.ingredients.push({ text: newTask, done: false });
          }
          this.newTask = '';
       },

@@ -22,3 +22,7 @@ header .fa-birthday-cake{
 .empty{
    margin: 100px 0;
 }
+
+.empty .fa-plus {
+   cursor: pointer;
+}
